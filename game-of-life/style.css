@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.game {
+    margin: auto;
+}
+.counter {
+    text-align: center;
+    font-size: 1.1rem;
+}
+#counter {
+    font-size: 1.3rem;
+}
