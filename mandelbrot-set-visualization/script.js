@@ -30,7 +30,7 @@ function drawMandelbrot() {
             for (let y = 0; y < CANVAS_SIZE; y++) {
                 let iterateValue = iterate([x * multiplier - range / 2, y * multiplier - range / 2])
                 if (iterateValue === NUM_OF_ITERATIONS) iterateValue = 0
-                const rgb = Math.floor((255 / NUM_OF_ITERATIONS) * iterateValue)
+                const rgb = -Math.floor((255 / NUM_OF_ITERATIONS) * iterateValue) + 255
                 const color = `rgb(${rgb}, ${rgb}, ${rgb})`
                 canvas.context.fillStyle = color
                 canvas.context.fillRect(x + range, y + range, 1, 1)
